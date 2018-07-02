@@ -1,0 +1,56 @@
+@import url(res/fonts/fonts.css);
+
+body {
+  text-align: center;
+  background-color: #222;
+  font-family: 'Cutive Mono', monospace;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+h1, h2 {
+  font-family: "Alegreya", serif;
+  letter-spacing: 0.05em;
+  margin: 0.25em;
+}
+
+h2 {
+  font-size: 1em !important;
+  color: #bbb !important;
+  margin: 1em;
+}
+
+h3 {
+  font-size: 2em !important;
+  margin: 0.25em;
+}
+
+img {
+  max-width: 100%;
+}
+
+div > ul {
+  text-align: left;
+  margin: auto auto;
+  display: inline-block;
+}
+
+div > ul > li {
+  margin: 0.25em;
+  font-size: 2em;
+}
+
+li {
+  margin: 0.25em;
+  list-style-type: none;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+.remark-slide-content.hljs-default {
+  background-color: #222;
+  color: #eee;
+}
