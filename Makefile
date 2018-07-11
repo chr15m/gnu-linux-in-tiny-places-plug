@@ -1,4 +1,4 @@
-index.html: README.md res/* res res/fonts/fonts.css
+index.html: talk.md res/* res res/fonts/fonts.css
 	markdown-to-slides --include-remark -s res/style.css $< > $@
 
 res/fonts/fonts.css:
