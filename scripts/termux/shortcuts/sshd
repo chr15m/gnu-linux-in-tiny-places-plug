@@ -1,0 +1,4 @@
+#!/bin/sh
+
+termux-wake-lock
+sshd

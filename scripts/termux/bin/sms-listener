@@ -1,0 +1,13 @@
+#!/bin/sh
+
+while [ 1 ]
+do
+  lastmessage=`cat .sms-last`
+  latestmessage=`termux-sms-inbox | jq '.[-1]' | sha256sum`
+  if [ "$lastmessage" != "$latestmessage" ]
+  then
+    echo "SMS received, LED pinged!"
+    echo "ping!" | netcat -u 192.168.43.255 10000
+    echo "$latestmessage" > .sms-last
+  fi
+done

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+while [ 1 ]
+do
+  lastmessage=`cat .sms-last`
+  latestmessage=`termux-sms-inbox | jq '.[-1]' | sha256sum`
+  if [ "$lastmessage" != "$latestmessage" ]
+  then
+    termux-sms-inbox | jq '.[-1].body' | termux-tts-speak
+    echo "$latestmessage" > .sms-last
+  fi
+done

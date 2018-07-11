@@ -1,0 +1,11 @@
+TUNNELUSER=...
+TUNNELDOMAIN=...
+
+termux-wake-lock
+while [ 1 ]
+do
+  ( date;
+  ssh -o ServerAliveInterval=60 -o ServerAliveCountMax=2 -NR 8022:localhost:8022 ${TUNNELUSER}@${TUNNELDOMAIN};
+  sleep 360 ) 2>&1 >> ~/log/ssh-tunnel.log
+done
+
