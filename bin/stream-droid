@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# 10.28.252.255
-vlc --intf dummy --fullscreen rtsp://$1:8086

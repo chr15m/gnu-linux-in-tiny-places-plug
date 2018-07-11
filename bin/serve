@@ -1,3 +1,0 @@
-#!/bin/bash
-
-/home/chrism/.node_modules/bin/http-server -a 127.0.0.1 -p 8001
