@@ -33,6 +33,7 @@ div > ul {
   text-align: left;
   margin: auto auto;
   display: inline-block;
+  width: 90%;
 }
 
 div > ul > li {
