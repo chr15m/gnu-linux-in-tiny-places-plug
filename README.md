@@ -20,9 +20,32 @@ Chris McCormick
 > (Nintendo DS, gp2x)
 
 ---
+
+# Tiny places
+
+ * Termux on Android
+ * piCore on RPi
+
+---
+
+# Setup
+
+ * Seven square
+ * Webcam
+
+---
+
 # Termux on Android
 
 ![Termux icon](res/icon_termux.png)
+
+---
+
+# Termux on Android
+
+ * Android application
+ * GNUish userspace
+ * on Android Linux kernel
 
 ---
 
@@ -41,10 +64,9 @@ Chris McCormick
 
  * $39 Android phone
  * Cheap prepaid plan
- * Screen
- * Camera
- * Speaker
- * GSM data
+ * Screen + camera
+ * Speaker + Microphone
+ * GSM data (internet)
  * SMS
 
 ---
@@ -64,7 +86,11 @@ Chris McCormick
 
  * Terminal UI
  * Shortcuts UI
+   * ~/.shortcuts
  * Boot scripts
+   * ~/.termux/boot
+ * Package manager:
+   * `pkg install somepackage`
 
 ---
 
@@ -109,8 +135,10 @@ Chris McCormick
 # Termux on Android
 ## Server
 
-  * Public server
-  * SSH tunnel
+ * SSH server
+ * HTTP server
+ * ~~Public IP~~
+ * SSH tunnel
 
 ---
 
@@ -133,23 +161,58 @@ Chris McCormick
 
  * piCore == TinyCore Linux
  * 49M image
+ * Read only - immutable!
+ * packages as mount points
+
+---
+
+# piCore on RPi
+## Software
+
+ * Persist changes:
+   * filetool.sh -b
+ * Boot scripts:
+   * /opt/bootlocal.sh
+ * Package manager:
+
+`tce-load -wi somepackagename`
 
 ---
 
 # piCore on RPi
 ## Hack
 
- * LED light in nodejs
- * Python button
+ * LED flash demo:
+   * Nodejs
+   * Python
  * Hats
+
+---
+
+# piCore on RPi
+## LED-over-HTTP
+
+![Server QR](./res/server-qr.svg)
+
+http://10.27.8.217:8000/led.php
 
 ---
 
 # piCore on RPi
 ## LED-over-SMS
 
+# 0481 300 706
+
 ---
 
 # piCore + Termux
 ## World's cheapest robotics platform?
+
+---
+
+# GNU/Linux in tiny places
+
+Chris McCormick
+
+<chris@mccormick.cx>
 
